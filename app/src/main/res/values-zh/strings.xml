@@ -3,4 +3,14 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loaddings">努力加载...</string>
+    <!--网络错误-->
+    <string name="default_net_failed">出现错误，请重试！</string>
+    <string name="http_net_failed">HTTP响应异常</string>
+    <string name="socket_timeout_net_failed">服务器响应超时</string>
+    <string name="connect_net_failed">网络连接异常，请检查您的网络状态</string>
+    <string name="unknownhost__net_failed">请检查网络是否连接</string>
+    <string name="unknownservice_net_failed">未知的服务器错误</string>
+    <string name="io_net_failed">没有网络，请检查网络连接</string>
+    <string name="runtime_net_failed">运行时错误</string>
+    <string name="parse_net_failed">解析出错</string>
 </resources>

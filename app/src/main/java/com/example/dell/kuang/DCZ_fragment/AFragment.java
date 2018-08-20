@@ -15,6 +15,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Toast;
 
 import com.example.dell.kuang.DCZ_bean.StatusBean;
+import com.example.dell.kuang.DCZ_okhttp.HttpHelper;
 import com.example.dell.kuang.DCZ_okhttp.HttpServiceClient;
 import com.example.dell.kuang.DCZ_okhttp.StatusBarUtil;
 import com.example.dell.kuang.DCZ_util.DialogUtil;
@@ -115,7 +116,7 @@ public class AFragment extends Fragment {
             }
             @Override
             public void onFailure(Call<StatusBean> call, Throwable t) {
-                Toast.makeText(getActivity(), "解析异常", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), HttpHelper.handleException(t), Toast.LENGTH_SHORT).show();
              /*   //在这里做全局的错误处理
                 if (e instanceof ConnectException || e instanceof SocketTimeoutException || e instanceof TimeoutException) {
                 //网络错误

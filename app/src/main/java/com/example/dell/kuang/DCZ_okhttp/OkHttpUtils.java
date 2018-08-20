@@ -34,9 +34,9 @@ public class OkHttpUtils {
         if (singleton == null) {
             synchronized (OkHttpUtils.class) {
                 if (singleton == null) {
-                    ClearableCookieJar cookieJar = new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(MyApplication.getContext()));
+                    //ClearableCookieJar cookieJar = new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(MyApplication.getContext()));
                     OkHttpClient.Builder builder = new OkHttpClient.Builder()
-                            .cookieJar(cookieJar)
+                            //.cookieJar(cookieJar)
                             .connectTimeout(15000L, TimeUnit.MILLISECONDS)
                             .readTimeout(20000L, TimeUnit.MILLISECONDS)
                             .writeTimeout(15000L, TimeUnit.MILLISECONDS);
